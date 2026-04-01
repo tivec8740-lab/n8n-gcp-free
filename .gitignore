@@ -1,0 +1,7 @@
+# .gitignore
+.env
+n8n_data/
+caddy_data/
+caddy_config/
+*.log
+node_modules/
