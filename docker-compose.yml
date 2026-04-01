@@ -16,11 +16,11 @@ services:
     image: n8nio/n8n:latest
     restart: always
     environment:
-      - N8N_HOST=tivec8740.duckdns.org
+      - N8N_HOST=${DOMAIN_NAME}
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
       - NODE_ENV=production
-      - WEBHOOK_URL=https://tivec8740.duckdns.org/
+      - WEBHOOK_URL=https://${DOMAIN_NAME}/
       - GENERIC_TIMEZONE=Asia/Kuala_Lumpur
       - EXECUTIONS_DATA_PRUNE=true
       - EXECUTIONS_DATA_MAX_AGE=72
