@@ -1,0 +1,3 @@
+tivec8740.duckdns.org {
+    reverse_proxy n8n:5678
+}
